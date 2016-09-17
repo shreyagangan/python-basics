@@ -5,9 +5,15 @@ class Complex:
 
 class Calculator:
     current = 0
-
     def add(self, amount):
-        add number to current
+        self.current+=amount
 
     def get_current(self):
         return self.current
+
+c1=Calculator()
+print(c1.get_current())
+c1.add(2)
+print(c1.get_current())
+c1.add(10)
+print(c1.get_current())
